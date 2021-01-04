@@ -62,3 +62,19 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
+
+function ToggleLanguage(){
+  if($(".en-lang").css("visibility") === "visible"){
+    $(".en-lang").css("visibility", "hidden");
+    $(".en-lang").css("display", "none");
+    $(".es-lang").css("visibility", "visible");
+    $(".es-lang").css("display", "inherit");
+  }
+  else{
+    $(".en-lang").css("visibility", "visible");
+    $(".en-lang").css("display", "inherit");
+    $(".es-lang").css("visibility", "hidden");
+    $(".es-lang").css("display", "none");
+  }
+}
