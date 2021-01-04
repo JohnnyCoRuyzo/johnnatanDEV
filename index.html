@@ -8,11 +8,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Johnnatan Ruiz's Portfolio - Johnnatan DEV</title>
+  <title class="en-lang">Johnnatan Ruiz's Portfolio - Johnnatan DEV</title>
+  <title class="es-lang">Portafolio de Johnnatan Ruiz - Johnnatan DEV</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -20,6 +21,12 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  <!-- Hover animations -->
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/hover.css" rel="stylesheet">
+  <style>
+  
+  </style>
 
 </head>
 
@@ -35,19 +42,24 @@
         <a class="js-scroll-trigger" href="#page-top">Johnnatan DEV</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger en-lang" href="#page-top">Home</a>
+        <a class="js-scroll-trigger es-lang" href="#page-top">Inicio</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
+        <a class="js-scroll-trigger en-lang" href="#about">About</a>
+        <a class="js-scroll-trigger es-lang" href="#about">Sobre mi</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
+        <a class="js-scroll-trigger en-lang" href="#services">Services</a>
+        <a class="js-scroll-trigger es-lang" href="#services">Servicios</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger en-lang" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger es-lang" href="#portfolio">Portafolio</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
+        <a class="js-scroll-trigger en-lang" href="#contact">Contact</a>
+        <a class="js-scroll-trigger es-lang" href="#contact">Contacto</a>
       </li>
     </ul>
   </nav>
@@ -56,19 +68,28 @@
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
       
-      <h1 class="mb-1" style="margin-top: -10%;">
+      <h1 class="mb-1" style="margin-top: -12%;">
         <div class="row"> 
           <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 align-middle " style="margin: auto;display: block;
           text-align: center;">
             <img class="title-image" src="img/Foto.PNG" alt="ProfilePicture">
-        </div>
+          </div>
           <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 title-text">
-        Johnnatan Ruiz's Portfolio</div></h1>
+            <div class="en-lang">Johnnatan Ruiz's Portfolio</div>
+            <div class="es-lang">Portafolio Johnnatan Ruiz</div>
+        </div>
+      </h1>
       <h3 class="mb-5">
         <br>
-        <em>Hi! Thanks for being here. <br> You're invited to take a look into my work.</em>
+        <em class="en-lang">Hi! Thanks for being here. <br> You're invited to take a look into my work.</em>
+        <em class="es-lang">Hola! Gracias por estar aquí. <br> Estas invitado a echar una mirada a mi trabajo.</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <div class="en-lang">
+        <a class="btn btn-primary btn-xl js-scroll-trigger hvr-wobble-vertical" href="#about">Find Out More</a>
+      </div>
+      <div class="es-lang">
+        <a class="btn btn-primary btn-xl js-scroll-trigger hvr-wobble-vertical" href="#about">Te muestro más</a>
+      </div>  
     </div>
     <div class="overlay"></div>
   </header>
@@ -77,10 +98,10 @@
   <section class="content-section bg-light" id="about">
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>"Everything is easy depending on the
-            perspective" </h2>
-          <p class="lead mb-5">
+        <div class="col-lg-10 mx-auto ">
+          <h2 class="en-lang">"Everything is easy depending on the perspective" </h2>
+          <h2 class="es-lang">"Todo es fácil dependiendo de la perspectiva" </h2>
+          <p class="lead mb-5 en-lang">
             <br>
             I seek to encompass adventures in
             technological projects, know and
@@ -94,7 +115,30 @@
             collaborate in the construction of a
             future. 
           </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What Can I Do</a>
+          <p class="lead mb-5 es-lang">
+            <br>
+            Busco abarcar aventuras en
+            proyectos tecnológicos, conocer y
+            aprender más sobre las nuevas
+            tecnologías. Apasionado por la
+            resolución de problemas en los que
+            se involucra la programación,
+            abierto a escuchar y proponer
+            ideas y, sobre todo, con una
+            perspectiva diferente para
+            colaborar en la construcción de un
+            futuro. 
+          </p>
+          <div class="en-lang">
+            <a class="btn btn-dark btn-xl js-scroll-trigger hvr-wobble-vertical" href="#services">
+           What Can I Do
+            </a>
+          </div>
+          <div class="es-lang">
+            <a class="btn btn-dark btn-xl js-scroll-trigger hvr-wobble-vertical" href="#services">
+            Que puedo hacer?
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -103,9 +147,11 @@
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What Can I Do</h2>
+      <div class="content-section-heading en-lang">
+        <h3 class="text-secondary mb-0 en-lang">Services</h3>
+        <h3 class="text-secondary mb-0 es-lang">Servicios</h3>
+        <h2 class="mb-5 en-lang">What Can I Do</h2>
+        <h2 class="mb-5 es-lang">Que puedo hacer?</h2>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -113,36 +159,79 @@
             <i class="icon-screen-smartphone"></i>
           </span>
           <h4>
-            <strong>API's Development</strong>
+            <strong class="en-lang">API's Development</strong>
+            <strong class="es-lang">Desarrollo de APIs</strong>
           </h4>
-          <p class="text-faded mb-0">Low consuming web services for mobile development!</p>
+          <p class="text-faded mb-0 en-lang">Low consuming web services for mobile development!</p>
+          <p class="text-faded mb-0 es-lang">Servicios web de bajo consumo para desarrollo móvil!</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-window-maximize"></i>
           </span>
           <h4>
-            <strong>Web Application</strong>
+            <strong class="en-lang">Web Application</strong>
+            <strong class="es-lang">Aplicaciones Web</strong>
           </h4>
-          <p class="text-faded mb-0">Full Stack Development on .NET with Angular or React.</p>
+          <p class="text-faded mb-0 en-lang">Full Stack Development on .NET with Angular or React.</p>
+          <p class="text-faded mb-0 es-lang">Desarrollo Full Stack en .NET con Angular o React.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-user-friends"></i>
           </span>
           <h4>
-            <strong>Team Work</strong>
+            <strong class="en-lang">Team Work</strong>
+            <strong class="es-lang">Trabajo en equipo</strong>
           </h4>
-          <p class="text-faded mb-0">Experience working with collaborative tools.</p>
+          <p class="text-faded mb-0 en-lang">Experience working with collaborative tools.</p>
+          <p class="text-faded mb-0 es-lang">Experiencia trabajando en herramientas colaborativas.</p>
         </div>
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-chart-line"></i>
           </span>
           <h4>
-            <strong>Data Analysis</strong>
+            <strong class="en-lang">Data Analysis</strong>
+            <strong class="es-lang">Análisis de datos</strong>
           </h4>
-          <p class="text-faded mb-0">Extraction and analysis of Business Data.</p>
+          <p class="text-faded mb-0 en-lang">Extraction and analysis of Business Data.</p>
+          <p class="text-faded mb-0 es-lang">Extracción y análisis de datos empresariales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies -->
+  <section class="content-section text-black text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0 en-lang">Companies</h3>
+        <h3 class="text-secondary mb-0 es-lang">Compañias</h3>
+        <h2 class="mb-5 en-lang">My work has been used by</h2>
+        <h2 class="mb-5 es-lang">Mi trabajo lo han utilizado por</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <img src="img/zte.png" class="iconzte">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <img src="img/logosamsung.png" class="iconosamsung">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <img src="img/Huawei.png" class="iconhuawei">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <img src="img/Nokia.png" class="iconnokia">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <img src="img/Movitar.png" class="iconmovistar">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <img src="img/Claro.png" class="iconclaro">
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <img src="img/TelCel.png" class="icontelcel">
         </div>
       </div>
     </div>
@@ -151,7 +240,11 @@
   <!-- Callout -->
   <section class="callout">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5"><mark class="match" style="background-color: rgba(255, 255, 255, .3  );display: inline-block;">Let's roll up our sleeves and get into work! Shall we?</mark></h2>
+      <h2 class="mx-auto mb-5"><mark class="match" style="background-color: rgba(255, 255, 255, .3  );display: inline-block;">
+        <div class="en-lang">Let's roll up our sleeves and get into work! Shall we?</div>
+        <div class="es-lang">Manos a la obra, a trabajar se dijo! Vamos?</div>
+      
+      </mark></h2>
     </div>
   </section>
 
@@ -159,16 +252,20 @@
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h3 class="text-secondary mb-0 en-lang">Portfolio</h3>
+        <h3 class="text-secondary mb-0 es-lang">Portafolio</h3>
+        <h2 class="mb-5 en-lang">Old Projects</h2>
+        <h2 class="mb-5 es-lang">Proyectos Viejos</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
           <a class="portfolio-item" target="_blank" href="https://johnnycoruyzo.github.io/Grafica_Interactiva/Ejercicio1/inicioVol1.html">
             <div class="caption">
               <div class="caption-content">
-                <div class="h2">Guardians of the Galaxy</div>
-                <p class="mb-0">Responsive design, made in 2018</p>
+                <div class="h2 en-lang">Guardians of the Galaxy</div>
+                <div class="h2 es-lang">Guardianes de la Galaxia</div>
+                <p class="mb-0 en-lang">Responsive design, made in 2018</p>
+                <p class="mb-0 es-lang">Diseño responsivo, hecho en 2018</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
@@ -178,8 +275,10 @@
           <a class="portfolio-item" target="_blank" href="https://johnnycoruyzo.github.io/Grafica_Interactiva/Ejercicio%202/Colombia.html">
             <div class="caption">
               <div class="caption-content">
-                <div class="h2">Subdivisions of Colombia</div>
-                <p class="mb-0">Adobe Animate CC, made in 2018.</p>
+                <div class="h2 en-lang">Subdivisions of Colombia</div>
+                <div class="h2 es-lang">Departamentos de Colombia</div>
+                <p class="mb-0 en-lang">Adobe Animate CC, made in 2018.</p>
+                <p class="mb-0 es-lang">Adobe Animate CC, hecho en 2018.</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
@@ -215,8 +314,8 @@
   <section class="content-section bg-primary text-white">
     <div class="container text-center">
       <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+      <a href="#!" class="btn btn-xl btn-light mr-4 hvr-wobble-vertical">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark hvr-wobble-vertical">Look at Me!</a>
     </div>
   </section-->
 
@@ -234,17 +333,17 @@
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://linkedin.com/in/johnnatanruizsanchez">
+          <a class="social-link rounded-circle text-white mr-3 hvr-wobble-vertical" target="_blank" href="https://linkedin.com/in/johnnatanruizsanchez">
             <i class="icon-social-linkedin"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://www.instagram.com/johnnatandev/">
+          <a class="social-link rounded-circle text-white mr-3 hvr-wobble-vertical" target="_blank" href="https://www.instagram.com/johnnatandev/">
             <i class="icon-social-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" target="_blank" href="https://github.com/JohnnyCoRuyzo">
+          <a class="social-link rounded-circle text-white hvr-wobble-vertical" target="_blank" href="https://github.com/JohnnyCoRuyzo">
             <i class="icon-social-github"></i>
           </a>
         </li>
