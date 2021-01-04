@@ -131,7 +131,8 @@ h6 {
   
   .title-image{
     border-radius: 50%;
-    width:200px;
+    width:40%;
+    align-content: center;
   }
 }
 
