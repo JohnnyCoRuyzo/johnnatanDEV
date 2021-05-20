@@ -336,6 +336,7 @@ h6 {
 
 .portfolio-item .caption .caption-content {
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
     margin: auto 2rem 2rem;
 }
 
@@ -362,10 +363,13 @@ h6 {
         clip-path: inset(0px);
     }
     .portfolio-item .caption .caption-content {
-        transition: opacity 0.25s;
+        transition: opacity 0.25s, background-color 0.25s;
+        transition: all 2s;
         margin-left: 5rem;
         margin-right: 5rem;
         margin-bottom: 5rem;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4);
     }
     .portfolio-item img {
         transition: -webkit-clip-path 0.25s ease-out;
@@ -382,6 +386,10 @@ h6 {
         background-color: rgba(29, 128, 159, 0.9);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
+    }
+    
+    .portfolio-item:hover .caption:hover .caption-content:hover {
+        opacity: 1;
     }
 }
 
