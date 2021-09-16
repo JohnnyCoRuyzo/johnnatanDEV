@@ -478,6 +478,6 @@ a:active {
     color: #ecb807 !important;
 }
 
-.contact-button{
-    color: #ecb807 !important;
+.fa-quote-right{    
+    margin-left: 10px;
 }
